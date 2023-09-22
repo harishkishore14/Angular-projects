@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <header class="version">V 1.0.0.1</header>
+    <script defer src="script.js"></script>
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <header class="heading">
+          <p class="intro">Stock Note</p>
+          <p class="features">
+            <!-- <img src="img/Stocknote.png" alt="Stocknote logo" class="image"/> -->
+            <!-- <br /><br /><br> -->
+
+            Powerful and Easy <br />
+            Features to Use
+          </p>
+          <p class="article">
+            Enjoy lots of new features and improve your <br />
+            trading skill on the go!
+          </p>
+        </header>
+        <footer class="end">
+          <p class="end">
+            SEBI registration number: INZ000002535 <br />
+            NSE: INEB 231213530 | NFO: INF 231213530 | MCX: INZ000002535
+            <br /><br />
+            @2021 Samco securities. All rights reserved |
+            <a href="" class="link">Terms of Service</a> |
+            <a href="" class="link">Privacy Policy</a>
+          </p>
+        </footer>
+      </div>
+      <div class="popup" id="popup">
+        <p>Check the terms and conditions checkbox</p>
+        <a href="" onclick="hide('popup')">Close</a>
+      </div>
+      <div class="flex-item-right">
+        <!-- <div id="error"></div> -->
+        <form
+          name="form"
+          class="login_form"
+          method="post"
+          onsubmit="return validate()"
+        >
+          <h2 class="heading">Trader Login</h2>
+          <p class="sign-in">
+            Sign in using Samco Credentials to <br />
+            access StockNote
+          </p>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your Username"
+              maxlength="7"
+              onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"
+            />
+            <div id="name_error">Please enter your username</div>
+            <label for="username" class="font">user id</label>
+          </div>
+          <br /><br />
+          <div class="input-wrapper">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your Password"
+              maxlength="15"
+              onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"
+            />
+            <div id="pass_error">Please enter your password</div>
+            <img
+              src="/img/pass-hide.png"
+              alt="eye-close"
+              onclick="pass()"
+              class="pass-icon"
+              id="pass-icon"
+            />
+            <label for="password" class="font">password</label>
+          </div>
+          <br /><br />
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="year"
+              name="year"
+              placeholder="Enter your Year of Birth"
+              maxlength="4"
+              onkeypress="return /[0-9]/i.test(event.key)"
+            />
+            <div id="year_error">Please enter your birth year</div>
+            <div id="year_error1">Enter a valid birth year</div>
+            <label for="year" class="font">year of birth</label>
+          </div>
+          <br />
+          <span class="checkbox">
+            <input type="checkbox" name="checkbox" id="box" />
+            <label for="checkbox" class="checkbox">Terms & conditions</label>
+          </span>
+          <br /><br />
+          <a href="" class="forgot">FORGOT PASSWORD</a>
+          <a href="" class="help">HELP</a>
+          <br /><br />
+          <button type="submit" class="log" onclick="show('popup')">
+            SECURED LOGIN
+          </button>
+
+          <br /><br />
+          <p class="social">SIGNUP WITH YOUR SOCIAL ACCOUNT</p>
+          <div href="" class="other-login">
+            <img src="img/facebook.png" alt="Facebook login" id="facebook" />
+            <img src="img/google.png" alt="Google login" id="google" />
+            <img src="img/samco.png" alt="Samco login" id="samco" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
