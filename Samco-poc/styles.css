@@ -1,0 +1,763 @@
+body {
+    background-color: dodgerblue;
+}
+
+.pass-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+
+label.checkbox {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+    background: none;
+    text-transform: none;
+    transform: none;
+    transition: none;
+    border: none;
+    margin-left: -110px;
+    /* margin-top: 0px; */
+    /* margin-bottom: -10px; */
+}
+
+#box {
+    margin-left: -220px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+    
+}
+
+header.version {
+    color: white;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+p.intro {
+    padding-top: 0px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.features {
+    padding-left: 120px;
+    font-weight: bold;
+    /* text-align: left; */
+}
+
+p.article {
+    padding-left: 120px;
+    padding-bottom: 80px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div p a.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    background: white;
+    color: dodgerblue;
+    /* width: 280px; */
+    height: 510px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-inline-start: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.login_form #name_error, .login_form #pass_error, .login_form #year_error, .login_form #year_error1 {
+    width: 260px;
+    font-size: 12px;
+    color: #c62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 3px;
+    display: none;
+    /* border: 0px solid #ef9a9a; */
+}
+
+form h2.heading {
+    color: dodgerblue;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+form p.sign-in {
+    color: gray;
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* form input:invalid {
+    border: 1px solid red;
+  }
+  
+input:valid {
+    border: 1px solid green;
+} */
+
+#username {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    border: 0.5px solid lightgray;
+}
+
+#password {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    border: 0.5px solid lightgray;
+}
+
+#year {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    border: 0.5px solid lightgray;
+}
+
+.input-wrapper{
+    position: relative;
+    line-height: 14px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+div.input-wrapper label.font{
+    color: dodgerblue;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: 12px;
+    padding: 2px 10px;
+    pointer-events: none;
+    background: white;
+    border-radius: 8px;
+    border: 0.2px solid lightgray;
+    transition: transform 100ms ease;
+    transform: translateY(-20px);
+}
+
+input{
+    font-size: 14px;
+    color: black;
+    outline: none;
+    width: 240px;
+    height: 20px;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* &:invalid + label {
+    transform: translateY(0);
+}
+     */
+/* &:focus {
+    border-color: dodgerblue;
+} */
+    
+&label {
+    color: dodgerblue;
+    transform: translateY(-20px);
+
+}
+
+form a.forgot {
+    color: dodgerblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: -40px;
+    margin-left: -10px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+form a.help {
+    color: dodgerblue;
+    text-decoration: none;
+    padding-left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+form button.log {
+    color: white;
+    background: dodgerblue;
+    border-style: hidden;
+    cursor: pointer;
+    height: 30px;
+    width: 260px;
+    margin-left: 0;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+div.popup {
+    display: none;
+    background: olive;
+    text-align: center;
+    position: fixed;
+    width: 280px;
+    height: 120px;
+    margin-top: 120px;
+    margin-left: 530px;
+    z-index: 20;
+}
+
+div.popup p {
+    color: #c62828;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+div.popup a {
+    color: #c62828;
+    text-decoration: none;
+}
+
+#popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+}
+  
+#popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: olive;
+    z-index: -1;
+}
+
+form p.social {
+    color: gray;
+    text-align: center;
+    font-size: 11px;
+}
+
+form div.other-login img {
+    border-radius: 15px;
+    padding: 4px;
+    text-decoration: none;
+    margin-right: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+#facebook {
+    margin-left: 6px;
+}
+
+footer.end p.end {
+    padding-left: 120px;
+    padding-bottom: 80px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.other-login img:hover {
+    position: relative;
+    top: -1px;
+}
+
+div.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flex-item-left {
+    flex: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.flex-item-right {
+    flex: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width:812px) {
+    div.flex-item-left, div.flex-item-right {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    form {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p.intro {
+        padding-left: 30px;
+        padding-top: 20px;
+        font-size: 32px;
+    }
+    p.features {
+        padding-left: 30px;
+        font-size: 24px;
+    }
+    p.article {
+        padding-left: 30px;
+        font-size: 10px;
+    }
+    footer.end p.end {
+        padding-left: 30px;
+        font-size: 8.5px;
+    }
+    form {
+        margin-left: 10px;
+    }
+    div.flex-item-left {
+        flex: 50%;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        flex-wrap: wrap;
+    }
+    div.flex-item-right {
+        flex: 50%;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.flex-container {
+        flex-wrap: wrap;
+    }
+    div .flex-item-left {
+        flex-wrap: wrap;
+    }
+    div.flex-item-right {
+        flex-wrap: wrap;
+    }
+    header.version {
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    p.intro {
+        text-align: center;
+        padding: 0;
+        font-size: 30px;
+    }
+    p.features {
+        text-align: center;
+        padding: 0;
+        font-size: 22px;
+    }
+    p.article {
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+    }
+    footer p a.link {
+        color: gray;
+    }
+    footer.end p.end {
+        position: absolute;
+        bottom: -20px;
+        height: 4px;
+        padding-top: 80px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 40px;
+        font-size: 10px;
+        text-align: center;
+        color: gray;
+        background: white;
+    }
+    form {
+        margin-left: 40px;
+    }
+    form h2.heading {
+        font-size: 22px;
+    }
+    form p.sign-in {
+        font-size: 14px;
+    }
+    form a.forgot {
+        font-size: 12px;
+    }
+    form a.help {
+        font-size: 12px;
+        padding-left: 80px;
+    }
+    form button.log {
+        padding-top: 10px;
+        padding-bottom: 22px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 12px;
+    }
+    form p.social {
+        font-size: 12px;
+    }
+    div.flex-item-left, div.flex-item-right {
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header.version {
+        display: none;
+    }
+    p.intro {
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    p.features {
+        margin-top: 10px;
+    }
+    .features br {
+        display: none;
+    }
+    .article br {
+        display: none;
+    }
+    form {
+        width: 350px;
+        margin-left: -10px;
+    }
+    form p.sign-in {
+        font-size: 16px;
+    }
+    label {
+        position: absolute;
+        left: -12px;
+        top: 12px;
+        padding: 2px 10px;
+        border-radius: 8px;
+    }
+    #username {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 340px;
+    }
+    #password {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 340px;
+    }
+    #year {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 340px;
+    }
+    form a.forgot {
+        margin-left: -20px;
+    }
+    form a.help {
+        padding-left: 120px;
+    }
+    form button.log {
+        margin-left: -5px;
+        width: 360px;
+    }
+    form p.social {
+        font-size: 11px;
+        text-align: center;
+    }
+    #facebook {
+        margin-left: 5px;
+    }
+    form div.other-login img {
+        margin-right: 5px;
+        width: 75px;
+        border-radius: 12px;
+    }
+    footer.end p.end {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 35px;
+        padding-bottom: 123px;
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 410px;
+        position: fixed;
+        bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header.version {
+        display: none;
+    }
+    p.intro {
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .features br {
+        display: none;
+    }
+    .article br {
+        display: none;
+    }
+    header p.features {
+        font-size: 18px;
+        margin-top: -10px;
+        text-align: center;
+    }
+    header p.article {
+        font-size: 14px;
+        text-align: center;
+        margin-top: -5px;
+        padding-bottom: 10px;
+    }
+    form h2.heading {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    form {
+        width: 300px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    form p.sign-in {
+        padding-bottom: 20px;
+    }
+    label {
+        position: absolute;
+        left: -30px;
+        padding: 2px 10px;
+        border-radius: 8px;
+    }
+    #username {
+        margin-left: -40px;
+        margin-right: -40px;
+        width: 290px;
+    }
+    #password {
+        margin-left: -40px;
+        margin-right: -40px;
+        width: 290px;
+    }
+    #year {
+        margin-left: -40px;
+        margin-right: -40px;
+        width: 290px;
+    }
+    form a.forgot {
+        margin-left: 0px;
+    }
+    form button.log {
+        margin-left: -5px;
+        /* margin-right: 10px; */
+        width: 310px;
+    }
+    form p.social {
+        font-size: 10px;
+        text-align: center;
+    }
+    #facebook {
+        margin-left: 5px;
+    }
+    form div.other-login img {
+        margin-right: 5px;
+        width: 65px;
+        border-radius: 12px;
+    }
+    footer.end p.end {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 35px;
+        padding-bottom: 154px;
+        width: 360px;
+        margin-left: -10px;
+        margin-right: -20px;
+        position: fixed;
+        bottom: -10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 320px) {
+    header.version {
+        display: none;
+    }
+    p.intro {
+        font-size: 25px;
+        text-align: center;
+    }
+    .features br {
+        display: none;
+    }
+    .article br {
+        display: none;
+    }
+    header p.features {
+        font-size: 16px;
+        text-align: center;
+    }
+    header p.article {
+        font-size: 10px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    form {
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 250px;
+    }
+    form h2.heading {
+        text-align: center;
+        font-size: 18px;
+    }
+    form p.sign-in {
+        text-align: center;
+    }
+    label {
+        position: absolute;
+        left: -10px;
+        padding: 2px 10px;
+        border-radius: 8px;
+    }
+    #username {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 250px;
+    }
+    #password {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 250px;
+    }
+    #year {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 250px;
+    }
+    form a.forgot {
+        margin-left: -5px;
+    }
+    form button.log {
+        margin-left: -8px;
+        margin-right: 12px;
+        width: 270px;
+    }
+    form p.social {
+        font-size: 10px;
+    }
+    form div.other-login img {
+        margin-right: 5px;
+        width: 60px;
+        border-radius: 10px;
+    }
+    #facebook {
+        margin-left: 5px;
+    }
+    footer.end p.end {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 35px;
+        padding-bottom: 175px;
+        margin-left: -10px;
+        margin-right: -10px;
+        position: fixed;
+        bottom: -10px;
+        width: 324px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 100px) {
+    header.version {
+        padding: 0px;
+    }
+    div p.intro {
+        text-align: center; 
+    }
+    form p {
+        text-align: center;
+    }
+}
+
+
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* form input{
+    align-items: center;
+} */
+
+/* img{
+    flex-wrap: wrap;
+    image-resolution: 20px;
+    flex-grow: 1;
+    display: inline;
+} */
+
+/* footer{
+    text-align: center;
+} */
+
+/* form input #username{
+    border-radius: 20px;
+} */
+
+
+
